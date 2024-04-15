@@ -1,0 +1,15 @@
+<div id="perPic">
+    <img src="1.jpg" id="cover" width="500" height="">
+</div>
+
+<script>
+    var cover = document.querySelector("#cover");
+    cover.addEventListener("mouseover", changePic);
+    cover.addEventListener("mouseout", originPic);
+    function changePic() {
+        cover.src = "1.jpg";
+    }
+    function originPic() {
+        cover.src = "2.jpg";
+    }
+</script>

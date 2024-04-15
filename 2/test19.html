@@ -1,0 +1,13 @@
+<div id="Choonsik">
+    <img src="2.jpg" alt="춘식이" id="car" onclick="displaySrc()">
+</div>
+
+<button id="change" onclick="changeSrc()">Click</button>
+
+<script>
+    var car = document.querySelector("#car");
+    function displaySrc() {
+        alert("이미지 소스 : "+car.getAttribute("src"));}
+    function changeSrc() {
+        car.setAttribute("src", "1.jpg")}
+</script>

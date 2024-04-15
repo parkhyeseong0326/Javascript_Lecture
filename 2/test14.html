@@ -1,0 +1,23 @@
+<script>
+    function Car(name) {
+        this.name = name;
+        this.speed = 0;
+        this.getName = function() {return this.name;}
+        this.getSpeed = function() {return this.speed;}
+        this.accelerate = function() {
+            this.speed = this.speed + 10;
+        }
+        this.decelerate = function() {
+            this.speed = this.speed - 10;
+        }
+    }
+
+    var car1 = new Car ("ferrari");
+    console.log(car1.getSpeed());
+    car1.accelerate();
+    console.log(car1.getSpeed());
+    car1.accelerate();
+    console.log(car1.getSpeed());
+    car1.accelerate();
+    console.log(car1.getSpeed());
+</script>

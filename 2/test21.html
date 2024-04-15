@@ -1,0 +1,10 @@
+<div id="perPic">
+    <img src="1.jpg" id="car">
+</div>
+
+<script>
+    var car = document.querySelector("#car");
+    car.onclick = function(event) {
+        alert("이벤트 유형: "+event.type+", 이벤트 발생 위치: "+event.offsetX+","+event.offsetY)
+    }
+</script>

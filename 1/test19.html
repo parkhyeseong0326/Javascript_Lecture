@@ -1,0 +1,23 @@
+<div>
+    <img src="51112c65e430f276412003df6566a550.jpeg">
+</div>
+<button id="open" onclick="showDetail()">상세 설명 보기</button>
+<div id="desc" style="display: none;">
+    <h4>Choonsik</h4>
+    <p>세계 최고의 고양이 춘식이...</p>
+    <button id="close">상세 설명 닫기
+    </button>
+</div>
+<script>
+    var openDetail = document.querySelector("#open")
+    var closeDetail = document.querySelector("#close")
+
+    openDetail.onclick = function(){
+        document.querySelector("#open").style.display = "none";
+        document.querySelector("#desc").style.display = "block";
+    }
+    closeDetail.onclick = function() {
+        document.querySelector("#open").style.display = "block";
+        document.querySelector("#desc").style.display = "none";
+    }
+</script>

@@ -1,0 +1,27 @@
+<body>
+    <p id="printNumber">0</p>
+    <div id="container">
+        <input id="minus" type="button" value="-1">
+        <input id="reset" type="button" value="reset">
+        <input id="plus" type="button" value="+1">
+    </div>
+
+    <script>
+        var num = 0;
+        var numPrinter = document.querySelector("#printNumber");
+        var minusBtn = document.querySelector('#minus');
+        var resetBtn = document.querySelector('#reset');
+        var plusBtn = document.querySelector('#plus');
+
+        minusBtn.onclick = function() {
+            numPrinter.textContent = --num;
+            console.log(num);
+        }
+        resetBtn.onclick = function() {
+            num = 0;
+            numPrinter.textContent = 0;
+            console.log(num);
+        }
+        plusBtn
+    </script>
+</body>

@@ -1,0 +1,35 @@
+<div id="box"></div>
+<style>
+    #box {
+        width: 60px;
+        height: 60px;
+        border-style: solid;
+        border-width: 2px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+</style>
+<script>
+    var y = 0, x = 0;
+    var box = document.querySelector('#box')
+    document.onkeydown = function(e) {
+        if (e.key == 'w') {
+            y = y - 30;
+            box.style.top = y;
+            console.log(box.style.top + ', ' + y)
+        } else if (e.key == 's') {
+            y = y + 30;
+            box.style.top = y;
+            console.log(box.style.top + ', ' + y)
+        } else if (e.key == 'a') {
+            x = x - 30;
+            box.style.left = x;
+            console.log(box.style.left + ', ' + x)
+        } else if (e.key == 'd') {
+            x = x + 30;
+            box.style.left = x;
+            console.log(box.style.left + ', ' + x)
+        }
+    }
+</script>

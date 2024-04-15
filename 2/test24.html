@@ -1,0 +1,22 @@
+<p>도형 위로 마우스 포인터를 올려놓으세요.</p>
+<div id="rect"></div>
+
+<style>
+    #rect {
+        border-style: solid;
+        width: 200;
+        height: 200;
+    }
+</style>
+
+<script>
+    var myRect =document.querySelector("#rect");
+    myRect.addEventListener("mouseover", function() {
+        myRect.style.backgroundColor = "green";
+        myRect.style.borderRadius = "40%";
+    });
+    myRect.addEventListener("mouseout", function() {
+        myRect.style.backgroundColor = "";
+        myRect.style.borderRadius = "";
+    });
+</script>
