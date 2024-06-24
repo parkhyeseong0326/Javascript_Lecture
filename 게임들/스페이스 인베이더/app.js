@@ -7,6 +7,6 @@ for(let i=0; i < stageSize*stageSize; i++) {
 
 const grid = document.querySelector(".grid");
 const stage = document.querySelectorAll(".grid div");
-const startBtn = document.querySelector(".startBtn");
-const stopBtn = document.querySelector(".stopBtn");
-const display = document.querySelector(".display");
+const startBtn = document.querySelector("#startBtn");
+const stopBtn = document.querySelector("#stopBtn");
+const display = document.querySelector("#display");
